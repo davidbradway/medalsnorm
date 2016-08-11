@@ -226,7 +226,7 @@ import quandl
 
 # Read API key from EnvVar if exists
 import os
-quandl_api_key = os.environ['QUANDLKEY','OR PLACE YOUR KEY KERE']
+quandl_api_key = os.getenv('QUANDLKEY','OR PLACE YOUR KEY KERE')
 quandl.ApiConfig.api_key = quandl_api_key 
 
 import sys
